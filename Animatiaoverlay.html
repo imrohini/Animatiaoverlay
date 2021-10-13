@@ -1,14 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animatia</title>
+    <title>Animatia Assignments</title>
+    <style>
+        .a_common {
+            width: 250px;
+            height: 250px;
+            background-image: url("img/1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative; 
+            cursor: pointer;
+        }
+
+        .a_common:hover   .a_sonii{
+               opacity: 1;
+               top: 0px;
+        } 
+        .a_common:hover  .a_soniiblue{
+            opacity: 1;
+            bottom: 0px;
+        } 
+
+        .a_sonii {
+            background-color: red;
+            position: absolute;
+            top: 350px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+
+            opacity: 0;
+            transition-property: all !important;
+            transition-duration: 1s;
+            transition-timing-function: linear;
+          
+        }
+
+        .a_soniiblue {
+            background-color: blue;
+            position: absolute;
+            bottom: 212px;
+            right: 0px;
+            width: 100%;
+            height: 100%;
+   
+            opacity: 0;
+            transition-property: all !important;
+            transition-duration: 1s;
+            transition-timing-function: linear;
+        }
+
+        /* .a1_common {
+            
+        } */
+
+        /* Baliram Css Start  */
+        /* .box
+         {
+            
+             width: 200px ;
+             height: 200px;
+             background-image: url("img/1.jpg");
+             background-size: cover;
+             cursor: pointer;
+             position: relative;
+         }
+         .box:hover .box2{
+          display: block;
+          transform: translateY(0);
+       
+         }
+         .box:hover .box3{
+          display: block;
+         }
+
+         .box2{
+            background-color: green;
+             width: 100% ;
+             height: 100%;
+             display: none;
+              animation: enter 0.5s ease-in-out;
+        
+         }
+         .box3{
+            background-color: rgb(128, 0, 0);
+             width: 100% ;
+             height: 100%;
+             display: none;
+              animation: enter2 0.5s ease-in-out;
+           z-index: 1;
+           top: 0;
+           right: 0;
+              position: absolute;
+         }
+         @keyframes enter {
+             0%{opacity: 0.5;
+                 transform: translateY(100px);
+             }
+             100%{
+                 opacity: 1;
+                 transform: translateY(0);
+             }
+         }
+         @keyframes enter2 {
+             0%{opacity: 0.5;
+                 transform: translateY(-100px);
+             }
+             100%{
+                 opacity: 1;
+                 transform: translateY(0);
+             }
+         } */
+    </style>
 </head>
 
 <body>
-    <h1>Overlay</h1>
-    
+    <h1>overlay</h1>
+
+    <!-- <div class="box">
+          <div class="box2"></div>
+          <div class="box3"></div>
+    </div> -->
+    <div class=" a_common">
+        <div class="a_soniiblue  a1_common"></div>
+        <div class="a_sonii  a1_common"></div>
+    </div>
+
+
 </body>
+
 </html>
