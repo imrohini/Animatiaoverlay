@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlay Assignment2</title>
+    <style>
+        .R_common {
+            width: 278px;
+            height: 212px;
+
+        }
+        .R_Assignment:hover .R_box1{
+            left: 0px;
+        }
+        .R_Assignment:hover .R_box2{
+            right: 0px;
+        }
+
+
+
+        .R_Assignment {
+
+           
+            background-image: url("img/3\ -\ Copy.jpg");
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .R_box1 {
+            background-color: rgba(0,0,0,0.3);
+            position: absolute;
+            left: -80%;
+            top: 0%;
+        }
+
+        .R_box2 {
+            background-color: rgba(0,0,0,0.3);
+            position: absolute;
+            right: -100%;
+            top: 0%;
+        }
+
+        .R1_common {
+            /* transition-property: all;
+             transition-duration: 0.3s;
+             transition-timing-function: linear; */
+            transition: all, 0.3s, linear;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Overlay2</h1>
+    <div class="R_Assignment R_common">
+        <div class="R_box1 R_common R1_common"></div>
+        <div class="R_box2 R_common R1_common"></div>
+    </div>
+
+</body>
+
+</html>

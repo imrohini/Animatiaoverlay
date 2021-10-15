@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlay Assignment3</title>
+    <style>
+        .p_common {
+            width: 378px;
+            height: 270px;
+        }
+
+        .p_Overlay:hover .P_box1 {
+            top: 0%;
+        }
+        .p_Overlay:hover .p_box2{
+            bottom:0%
+        }
+
+        .p_Overlay {
+
+            
+            background-image: url("img/4.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .P_box1 {
+            width: 378px;
+            height: 270px;
+            background-color:rgba(0,0,0,0.3);
+            top: 100%;
+            left: 0%;
+            position: absolute;
+
+        }
+
+        .p_box2 {
+            width: 378px;
+            height: 270px;
+            background-color: rgba(0,0,0,0.3);
+            bottom: 100%;
+            right: 0%;
+            position: absolute;
+        }
+
+        .p1_common {
+            /* transition-property: all;
+             transition-duration: 0.2s;
+             transition-timing-function: linear; */
+            transition: all, 0.2, linear;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Assignment</h1>
+    <div class="p_Overlay p_common">
+        <div class="P_box1 P_common p1_common"></div>
+        <div class="p_box2 p_common p1_common"></div>
+    </div>
+
+</body>
+
+</html>
